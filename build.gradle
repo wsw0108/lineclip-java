@@ -1,0 +1,23 @@
+plugins {
+    id 'java-library'
+}
+
+group 'org.maptalks'
+
+version '1.0.0'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+dependencies {
+    // api 'com.github.wsw0108:pointlike:1.0.0'
+    implementation 'com.vividsolutions:jts:1.13'
+    testImplementation 'junit:junit:4.12'
+}
+
+repositories {
+    mavenLocal()
+    jcenter()
+    mavenCentral()
+    maven { url 'https://jitpack.io' }
+}
